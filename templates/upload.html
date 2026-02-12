@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Scout | Upload Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container"> <div class="glass-card">
+            <div class="brand">
+                <h1>Upload Report 📄</h1>
+                <p>Select the Career Report for analysis</p>
+            </div>
+            
+            <form action="/analyze" method="POST" enctype="multipart/form-data">
+                <div class="upload-box" id="drop-area">
+                    <input type="file" name="file" id="file-input" accept=".pdf,.txt" required hidden>
+                    <div class="upload-icon">📤</div>
+                    <p id="file-name">Drag & Drop or <span class="browse-text">Browse</span></p>
+                    <small>Supports PDF and TXT</small>
+                </div>
+
+                <button type="submit" class="login-btn">Generate Scout Rank</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Simple script to show the selected file name
+        const fileInput = document.getElementById('file-input');
+        const dropArea = document.getElementById('drop-area');
+        const fileNameDisplay = document.getElementById('file-name');
+
+        dropArea.onclick = () => fileInput.click();
+
+        fileInput.onchange = ({target}) => {
+            let file = target.files[0];
+            if (file) {
+                fileNameDisplay.innerText = file.name;
+                fileNameDisplay.style.color = "#38bdf8";
+            }
+        };
+    </script>
+</body>
+</html>

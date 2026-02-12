@@ -1,0 +1,1 @@
+Name: Shrikant Singh Skills: HTML, CSS, JavaScript, Basic Python, Java. Projects: Created a personal portfolio website. Built a simple calculator in Java. Summary: Creative front-end developer looking to learn more about backend systems.

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Talent Scout | Recruiter Panel</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="glass-card">
+            <h1>Recruiter Panel</h1>
+            {% if file_ready %}
+                <p style="color: #4ade80;">✅ A new report has been uploaded and is ready for sorting.</p>
+                <form action="/generate_pdf" method="POST">
+                    <button type="submit" class="login-btn">Sort & Generate Final PDF</button>
+                </form>
+            {% else %}
+                <p style="color: #fb7185;">⏳ Waiting for a student to upload the Career Report...</p>
+                <a href="/" class="login-btn" style="text-decoration: none; text-align: center; background: rgba(255,255,255,0.1);">Back to Home</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

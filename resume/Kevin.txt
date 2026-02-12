@@ -1,0 +1,1 @@
+Name: Kevin Miller Experience: Freelance Web Developer. Skills: HTML5, CSS3, JavaScript, React, Node.js, basic Python. Projects: Built an E-commerce website for a local pharmacy. Designed a responsive portfolio for a photography studio. Education: BCA (75%).

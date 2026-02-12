@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Talent Scout | Portal</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="glass-card">
+            <h1>Talent Scout AI 🕵️</h1>
+            <p>Select your access level</p>
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                <a href="/login/recruiter" class="login-btn" style="text-decoration: none; text-align: center;">Recruiter Portal</a>
+                <a href="/login/student" class="login-btn" style="text-decoration: none; text-align: center;">Student Portal</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

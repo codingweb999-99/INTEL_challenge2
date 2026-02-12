@@ -1,0 +1,1 @@
+Name: Anjali Rao Experience: System Administrator at NetGrid. Skills: Linux, Bash Scripting, Docker, Kubernetes, Networking. Projects: Automated server backups using Python scripts. Managed a cluster of 50+ virtual machines. Education: B.E. in Electronics (80%).

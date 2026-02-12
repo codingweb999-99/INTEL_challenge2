@@ -1,0 +1,1 @@
+Name: Leo Thompson Experience: None (Student). Skills: Java, C++, Python, Data Structures, Algorithms. Projects: Final year project on Image Recognition using OpenCV. Participated in Google HashCode. Education: B.Tech in IT (95% - Gold Medalist).
